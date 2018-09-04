@@ -3,7 +3,6 @@ nltk
 pyaudio
 speechrecognition
 pyttsx3
-pypiwin32
 gtts
 subprocess.run
 playsound
@@ -13,4 +12,4 @@ clipboard
 wikipedia
 numpy
 selenium
-sqlite3
+pytz
