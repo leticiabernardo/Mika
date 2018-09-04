@@ -1,0 +1,16 @@
+oauth2
+nltk
+pyaudio
+speechrecognition
+pyttsx3
+pypiwin32
+gtts
+subprocess.run
+playsound
+pytz
+googletrans
+clipboard
+wikipedia
+numpy
+selenium
+sqlite3

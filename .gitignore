@@ -1,0 +1,6 @@
+config.py
+/venv/*
+/_BACKUP/*
+/_DOCS/*
+/__pycache__/
+/.idea/*
