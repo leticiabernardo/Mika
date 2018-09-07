@@ -4,3 +4,5 @@ config.py
 /_DOCS/*
 /__pycache__/
 /.idea/*
+/utils/__pycache__/
+/app/__pycache__/

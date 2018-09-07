@@ -27,6 +27,11 @@ class DMWikipedia:
 
 
 
+    def speak_wikipedia_page(self):
+        self.tts.speak("Digite uma pesquisa")
+        search_text = input("Digite uma pesquisa: ")
+        self.tts.speak(wikipedia.get_wiki(search_text))
+
         # wikipedia.set_lang("pt")
 # print (wikipedia.summary("wikipedia"))
 # dm = DM_Wikipedia()
