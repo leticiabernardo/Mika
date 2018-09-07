@@ -4,7 +4,7 @@ __version__ = "0.0.23"
 __license__ = "MIT"
 __status__ = "Beta"
 
-from app.setup_tools.setup import Setup
+#from app.setup_tools.setup import Setup
 # Setup()
 
 print("Inicializando...")
