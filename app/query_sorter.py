@@ -26,11 +26,11 @@ class QuerySorter:
             return SearchWeb().search_site()
 
         elif self.query in ["QUE HORAS SÃO"]:
-            from app.command.datetime import ComDateTime
+            from app.command.moment_datetime import ComDateTime
             return ComDateTime().getTime()
 
         elif self.query in ["QUE DIA É HOJE"]:
-            from app.command.datetime import ComDateTime
+            from app.command.moment_datetime import ComDateTime
             return ComDateTime().getDate()
 
         elif self.query in ["COMO ESTÁ O TEMPO"]:

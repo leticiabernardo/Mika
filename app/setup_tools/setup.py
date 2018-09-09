@@ -2,12 +2,14 @@ import os
 import subprocess
 import platform
 import sys
+from setuptools import setup, find_packages
 
 
 class Setup:
     def __init__(self):
         self.path_virtualenv = "venv/"
         self.os_platform = platform.system()
+        self.default()
         self.check_up()
 
     def check_up(self):
@@ -61,6 +63,13 @@ class Setup:
         # subprocess.run([pip_path, "list"])
         subprocess.run([pip_path, "install", "-r", "requirements.txt"])
 
-
-
-
+    def default(self):
+        setup(
+            name="oran",
+            version="0.0.23",
+            author="Letícia Ellen Bernardo",
+            author_email="leticiaellenbernardo@gmail.com",
+            description="initial project of virtual assistant",
+            packages=find_packages(),
+            long_description=""
+        )

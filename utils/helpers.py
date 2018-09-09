@@ -7,6 +7,7 @@ from unicodedata import normalize
 def clean_word(string):
     ln = string.strip()
     #ln = normalize('NFKD', ln).encode('ASCII', 'ignore').decode('ASCII')
+
     ln = ln.upper()
     return ln
 
