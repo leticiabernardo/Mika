@@ -1,7 +1,7 @@
 import re
 
 
-class Dictionary:
+class DictionaryTools:
     def __init__(self):
         self.folder = "../../files/vocabulary/"
         self.save_folder = "dictionary/"
@@ -13,26 +13,18 @@ class Dictionary:
         self.effective_word_count = 0
 
     def create_dictionary(self):
-        # file = open(self.folder + self.folder_dic + self.words_name + self.extension, "r")
-        # dict_all = file.read()
-        # file.close()
+        file = open(self.folder + self.folder_dic + self.words_name + self.extension, "r")
+        dict_all = file.read()
+        file.close()
 
-        # self.__create_dict_personal_names(dict_all)
-        # self.dict_synonymous()
-
-
-
-
-
-
-
+        self.__create_dict_personal_names(dict_all)
+        self.dict_synonymous()
 
     @staticmethod
     def __regex(regex, str):
         regexp_handler = re.compile(regex)
         result = regexp_handler.search(str)
         return result.groups()[0]
-
 
     def __create_dict_personal_names(self, dict_all):
         dict_all_list = dict_all.strip().split('\n')
@@ -113,5 +105,5 @@ class Dictionary:
 
 
 
-d = Dictionary()
+d = DictionaryTools()
 d.create_dictionary()

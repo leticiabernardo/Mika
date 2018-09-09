@@ -19,17 +19,21 @@ class WordsClassifier:
                 / len(max([self.str1, self.str2], key=len)) > 0.65:
             return 1
         else:
-            return "xiii"
+            return "n"
 
     def basic_string_comparison(self):
         return self.str1 == self.str2
 
 
+
+
+
     def break_words(self):
+        #separa as palavras
         return True
 
-
     def search_synonymous(self):
+        #procura sinonimos no dicionario para fazer comparacao
         return True
 
     def levenshtein_distance(self, str1, str2):
@@ -45,9 +49,9 @@ class WordsClassifier:
         return d[len(str1)][len(str2)]
 
 
-d = WordsClassifier("quero buscar no google", "buscar no google")
-ret = d.percent_string_classification()
-print(ret)
+# d = WordsClassifier("quero buscar no google", "buscar no google")
+# ret = d.percent_string_classification()
+# print(ret)
 # print(len(max(["eu gostaria de fazer uma busca no google", "buscar no google"], key=len)))
 # ret = d.levenshtein_distance("buscar na google", "busca no googles")
 
