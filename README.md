@@ -1,42 +1,70 @@
-##Oran
+# Oran
+#### The virtual assistant
 
-----------------------------------
-Ativando no Windows
-
-Criando a maquina virtual
-virtualenv venv
-virtualenv venv -p C:/Python/Python36/python.exe
-
-ativando
-.\venv\Scripts\activate
-
----------------------------------
-Ativando no linux
-virtualenv venv
-
-. venv/bin/activate
+Este é um projeto inicial de um assistente virtual.<br><br>
+No meu tempo livre, vou colocando mais comandos, funcionalidades e "inteligência".<br>
+Em breve, escreverei uma documentação melhor sobre como instalar os pacotes para fazê-lo funcionar.<br>
+Este projeto é livre, sendo assim, qualquer um pode modificá-lo e melhorá-lo como quiser.
 
 
 ---------------------------------
-Em ambos
+### Rodando o projeto
 
-listando bibliotecas instaladas
+Antes de mais nada, você precisará do Python e do gerenciador de pacotes Pip instalados em sua máquina.<br>
+Caso não tenha instalado o pip, rode os comandos abaixo:
+
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+
+python get-pip.py
+```
+
+Para checar se o Pip foi instalado corretamente, digite:
+```
 pip list
+```
 
-sudo dnf install python-pyaudio
-sudo dnf install redhat-rpm-config
-sudo yum install python-devel
-sudo yum install libevent-devel
-sudo easy_install gevent
-sudo yum -y install gcc
-ou
-sudo apt-get install python-pyaudio
+_O `pip list` exibe todos os pacotes já instalados._<br>
+Agora com o pip instalado, instale o pacote virtualenv:
+```
+pip install virtualenv
+```
 
-instalando os requisitos do projeto
+Entre na pasta do projeto e crie sua máquina virtual.
+
+#### Criando a máquina virtual com o virtualenv
+Digite no seu terminal:
+```
+virtualenv venv
+```
+Caso queira copiar seus pacotes da sua máquina para a máquina virtual, utilize: 
+`virtualenv venv -p C:/Python/Python36/python.exe`<br>
+_Lembre-se de trocar o caminho pelo qual o Python está instalado em sua máquina._
+
+Note que, é criado a pasta venv no diretório atual.
+Para rodar o projeto, você precisará ativar a máquina e instalar todas as depedências do projeto, da seguinte forma:
+
+###### Caso for Windows
+```
+.\venv\Scripts\activate
+```
+
+###### Caso for Linux
+```
+. venv/bin/activate
+```
+
+Com a mv ativada, instale os requisitos do projeto:
+```
 pip install -r requirements.txt
+```
 
-executando o projeto
+Executando o projeto:
+```
 python run.py
+```
 
-sair do projeto
+Saindo do projeto:
+```
 deactivate
+```
