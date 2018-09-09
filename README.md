@@ -1,5 +1,4 @@
-# Oran
-#### The virtual assistant
+## Mika, sua assistente virtual
 
 Este é um projeto inicial de um assistente virtual.<br><br>
 No meu tempo livre, vou colocando mais comandos, funcionalidades e "inteligência".<br>
