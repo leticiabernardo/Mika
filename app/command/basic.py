@@ -7,7 +7,7 @@ class Basic:
         self.tts = Tts()
 
     def hello(self):
-        self.tts.speak("Olá!! Aqui é a Oran.")
+        self.tts.speak("Olá!! Sou a Mika.")
 
     def goodbye(self):
         self.tts.speak("Me sinto grata por poder servir. Até mais!")

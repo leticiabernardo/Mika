@@ -13,10 +13,10 @@ import speech_recognition as sr
 r = sr.Recognizer()
 
 from app.command.basic import Basic
-oran_says = Basic()
+mika_says = Basic()
 
-oran_says.hello()
-oran_says.i_gonna_help_you()
+mika_says.hello()
+mika_says.i_gonna_help_you()
 
 my_command = ""
 scout = 0
@@ -47,7 +47,7 @@ with sr.Microphone() as source:
             my_command = ""
 
         elif scout == 2:
-            oran_says.i_cant_understand()
+            mika_says.i_cant_understand()
 
         elif scout == 4:
-            oran_says.silence_mode()
+            mika_says.silence_mode()

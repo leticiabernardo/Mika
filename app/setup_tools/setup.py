@@ -65,7 +65,7 @@ class Setup:
 
     def default(self):
         setup(
-            name="oran",
+            name="mika",
             version="0.0.23",
             author="Letícia Ellen Bernardo",
             author_email="leticiaellenbernardo@gmail.com",

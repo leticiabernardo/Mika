@@ -13,9 +13,9 @@ class QuerySorter:
             self.call_chatbot()
 
     def search_commands(self):
-        if self.query in ["ORAN"]:
-            from app.command.oran import Oran
-            return Oran().call_my_name()
+        if self.query in ["MIKA"]:
+            from app.command.mika import Mika
+            return Mika().call_my_name()
 
         elif self.query in ["PESQUISAR NO GOOGLE"]:
             from app.command.searchweb import SearchWeb
