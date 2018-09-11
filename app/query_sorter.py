@@ -17,14 +17,6 @@ class QuerySorter:
             from app.command.mika import Mika
             return Mika().call_my_name()
 
-        elif self.query in ["PESQUISAR NO GOOGLE"]:
-            from app.command.searchweb import SearchWeb
-            return SearchWeb().search_in_gooogle()
-
-        elif self.query in ["ABRIR SITE"]:
-            from app.command.searchweb import SearchWeb
-            return SearchWeb().search_site()
-
         elif self.query in ["QUE HORAS SÃO"]:
             from app.command.moment_datetime import ComDateTime
             return ComDateTime().getTime()
@@ -36,6 +28,14 @@ class QuerySorter:
         elif self.query in ["COMO ESTÁ O TEMPO"]:
             from app.command.meteorology import Meteorology
             return Meteorology().getMeteorology()
+
+        elif self.query in ["PESQUISAR NO GOOGLE"]:
+            from app.command.searchweb import SearchWeb
+            return SearchWeb().search_in_gooogle()
+
+        elif self.query in ["ABRIR SITE"]:
+            from app.command.searchweb import SearchWeb
+            return SearchWeb().search_site()
 
         elif self.query in ["COMO ESTÁ A COTAÇÃO HOJE"]:
             from app.command.quotation import Quotation
