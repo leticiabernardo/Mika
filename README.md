@@ -7,7 +7,7 @@ Este projeto é livre, sendo assim, qualquer um pode modificá-lo e melhorá-lo 
 
 
 ---------------------------------
-### Rodando o projeto
+### Instalando o projeto
 
 Antes de mais nada, você precisará do Python e do gerenciador de pacotes Pip instalados em sua máquina.<br>
 Caso não tenha instalado o pip, rode os comandos abaixo:
@@ -58,12 +58,24 @@ Com a mv ativada, instale os requisitos do projeto:
 pip install -r requirements.txt
 ```
 
-Executando o projeto:
+Instale o Espeak:
+https://sourceforge.net/projects/espeak/files/latest/download?source=typ_redirect
+
+
+Renomeie o `config-dist.py` para `config.py` e insira as chaves de APIs conforme as indicações no arquivo.
+E, pronto.
+
+---------------------------------
+### Executando o projeto
+
+Para executar o projeto, ative a venv e execute:
 ```
 python run.py
 ```
 
-Saindo do projeto:
+---------------------------------
+### Saindo do projeto
+Para sair da virtual env, utilize o comando:
 ```
 deactivate
 ```
