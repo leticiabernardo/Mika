@@ -41,7 +41,17 @@ Caso queira copiar seus pacotes da sua máquina para a máquina virtual, utilize
 _Lembre-se de trocar o caminho pelo qual o Python está instalado em sua máquina._
 
 Note que, é criado a pasta venv no diretório atual.
-Para rodar o projeto, você precisará ativar a máquina e instalar todas as depedências do projeto, da seguinte forma:
+
+Instale o Espeak:<br>
+https://sourceforge.net/projects/espeak/files/latest/download?source=typ_redirect
+
+Renomeie o `config-dist.py` para `config.py` e insira as chaves de APIs conforme as indicações no arquivo.<br>
+E, pronto!
+
+---------------------------------
+### Executando o projeto
+
+Para executar o projeto, você precisará ativar a máquina e instalar todas as depedências do projeto, da seguinte forma:
 
 ###### Caso for Windows
 ```
@@ -53,22 +63,12 @@ Para rodar o projeto, você precisará ativar a máquina e instalar todas as dep
 . venv/bin/activate
 ```
 
-Com a mv ativada, instale os requisitos do projeto:
+Com a mv ativada, instale os requisitos do projeto (caso ainda não tenha instalado):
 ```
 pip install -r requirements.txt
 ```
 
-Instale o Espeak:
-https://sourceforge.net/projects/espeak/files/latest/download?source=typ_redirect
-
-
-Renomeie o `config-dist.py` para `config.py` e insira as chaves de APIs conforme as indicações no arquivo.
-E, pronto.
-
----------------------------------
-### Executando o projeto
-
-Para executar o projeto, ative a venv e execute:
+E, execute:
 ```
 python run.py
 ```
